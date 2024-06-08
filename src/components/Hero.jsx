@@ -8,6 +8,7 @@ import Button from "./Button";
 import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import CompanyLogos from "./CompanyLogos";
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (
@@ -84,6 +85,7 @@ const Hero = () => {
         </div>
         <BackgroundCircles />
       </div>
+      <CompanyLogos className='hidden relative z-50 mt-20 lg:block' />
       <BottomLine />
     </Section>
   );
